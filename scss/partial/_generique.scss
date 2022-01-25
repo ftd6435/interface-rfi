@@ -1,0 +1,62 @@
+.btn {
+  display: inline-block;
+  background: var(--navbar-color);
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  padding: 0.3rem 0;
+  font-size: 1.1rem;
+
+  &-radio {
+    width: 180px;
+  }
+  &-resumer {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem;
+  }
+  &-entretien {
+    width: 70px;
+  }
+  &-decryptage {
+    width: 80px;
+    background: #fff;
+    color: #000;
+  }
+  &-white {
+    background: #fff;
+    color: #000;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-top: 0;
+  }
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &-podcasts {
+    color: #fff;
+  }
+}
+
+.arrow-right {
+  font-size: 1.2rem;
+  color: var(--navbar-color);
+  text-align: right;
+  padding-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.arrow-color {
+  color: #fff;
+}

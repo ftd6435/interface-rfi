@@ -1,0 +1,48 @@
+/*
+    * Personnalisation du comportement de mes balises 
+    * Avec une taille d'ecrire a la racine de 62.5% qui correspond a 10px ou 1rem
+    * Decoration des liens et les liste tous a none
+    * Les titres 10px = 1rem de marge en haut et en bas
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html body {
+  font-size: 1.6rem;
+  font-family: var(--roboto-font);
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  padding-top: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}

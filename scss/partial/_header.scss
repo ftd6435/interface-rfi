@@ -1,0 +1,132 @@
+/*
+    * Mise en forme de l'entete de la page
+*/
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  z-index: 1000;
+  // Le premier sous element du header
+  &-element {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    padding: 0 1rem;
+    margin: auto;
+
+    // le logo rfi
+    .h-logo {
+      display: inline-block;
+      font-size: 2.8rem;
+      color: #fff;
+      cursor: pointer;
+      h1 {
+        background: var(--navbar-color);
+        .r {
+          font-weight: 300;
+        }
+        .f {
+          font-weight: 500;
+        }
+        .i {
+          font-weight: 700;
+        }
+      }
+    }
+
+    // le grand block play
+    .h-play {
+      display: flex;
+      flex-flow: row nowrap;
+
+      .baner {
+        width: 1px;
+        background: #000;
+      }
+
+      // les blocks plays
+      .play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1.5rem;
+        cursor: pointer;
+
+        svg {
+          width: 50px;
+          height: 50px;
+          margin-right: 1rem;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+          span {
+            text-transform: uppercase;
+            color: var(--navbar-color);
+          }
+        }
+      }
+    }
+
+    // le logo du menu
+    .menu {
+      svg {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // La barre de navigation principal
+  .navbar {
+    width: 100%;
+    background: var(--navbar-color);
+
+    &-content {
+      width: 1000px;
+      margin: auto;
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+
+        .p-1 {
+          padding-left: 1rem;
+        }
+
+        li {
+          padding: 0.5rem 0;
+          button {
+            background: #fff;
+            color: var(--navbar-color);
+            margin-right: 1rem;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+          svg {
+            width: 25px;
+            height: 25px;
+            margin-right: 2rem;
+            margin-left: 1rem;
+            cursor: pointer;
+          }
+
+          a {
+            color: #fff;
+            margin-right: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}

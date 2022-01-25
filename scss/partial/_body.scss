@@ -1,0 +1,351 @@
+/*
+    * Le corps de page ou le body
+*/
+
+main {
+  background: var(--bg-color);
+}
+
+// Section a la une des informations
+.a-la-une {
+  width: 1000px;
+  margin: auto;
+  padding-top: 4.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+
+  .block {
+    flex-grow: 1;
+    margin-right: 3rem;
+    align-items: stretch;
+
+    .card {
+      &-big {
+        margin-bottom: 3rem;
+        &-content {
+          height: 350px;
+          position: relative;
+          img {
+            position: absolute;
+            width: 650px;
+            height: 350px;
+          }
+          .card-big-text {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: center;
+            z-index: 1000;
+          }
+        }
+      }
+
+      &-small {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        column-gap: 3rem;
+        row-gap: 2.5rem;
+
+        .car-small-content {
+          img {
+            width: 310px;
+            height: 160px;
+          }
+          .card-small-text h2 {
+            font-size: 1.8rem;
+            margin-top: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .side-bar {
+    width: 320px;
+    flex: none;
+    height: 550px;
+    background: var(--bg-sidebar);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      letter-spacing: 0.1rem;
+    }
+
+    ul {
+      li {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .time {
+          width: 70px;
+          flex: none;
+
+          p {
+            width: 40px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #fff;
+            background: var(--navbar-color);
+            padding: 0.2rem;
+          }
+        }
+
+        .detail {
+          border-left: 2px solid var(--navbar-color);
+          padding-left: 2rem;
+
+          p {
+            padding-top: 0.5rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .actualite {
+      font-size: 1.2rem;
+      color: var(--navbar-color);
+      text-align: end;
+      margin-right: 2rem;
+    }
+  }
+}
+
+// Section de la can 2022
+.bg-can2022 {
+  background: var(--bg-sidebar);
+  margin-top: 6rem;
+}
+
+.can2022 {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 3rem;
+  }
+}
+
+.can2022-content-item {
+  display: flex;
+  flex-direction: column;
+
+  .big-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 3rem;
+        margin-top: 0;
+        vertical-align: middle;
+        svg {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+
+  .small-card {
+    display: flex;
+    flex-flow: row nowrap;
+
+    &-img {
+      width: 200px;
+      height: 150px;
+      flex: none;
+    }
+    &-text {
+      padding-left: 2rem;
+      h3 {
+        margin-top: 0;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.big-card-img {
+  img {
+    height: 250px;
+  }
+}
+
+.small-card-img {
+  img {
+    height: 110px;
+  }
+}
+
+// La section d'apres celle de la can
+.autres {
+  width: 1000px;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 3rem;
+  row-gap: 3rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    &-img {
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
+
+// La section des card horizontal politique
+.politique {
+  width: 1000px;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  .card-horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    &-img {
+      img {
+        width: 150px;
+        height: 100px;
+      }
+    }
+    &-text {
+      padding-left: 1rem;
+      h3 {
+        margin-top: 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+// La section podcasts
+.podcasts {
+  background: var(--bg-section);
+  margin-top: 3rem;
+  &-content {
+    width: 1000px;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    .big-card-text,
+    .small-card-text {
+      color: #fff;
+    }
+  }
+}
+
+// La section afrique
+.afrique {
+  margin-bottom: 3rem;
+}
+
+.afrique-content {
+  width: 1000px;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  &-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 3rem;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+
+      &-img {
+        img {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+// Section partenariats
+.card-vertical {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 3rem;
+  row-gap: 3rem;
+
+  .card {
+    &-img {
+      height: 200px;
+    }
+  }
+}
+
+// La section des archives
+.archives {
+  background: var(--bg-color);
+  &-content {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .date-archives {
+      display: flex;
+      flex-flow: row wrap;
+
+      p {
+        width: 70px;
+        background: var(--bg-sidebar);
+        font-size: 2rem;
+        text-align: center;
+        margin-right: 2.5rem;
+        margin-bottom: 2rem;
+        padding: 0.8rem;
+      }
+    }
+  }
+}
