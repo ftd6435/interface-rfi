@@ -1,0 +1,190 @@
+/********************* HEADER RESPONSIVE ***********************/
+.header-element {
+  width: 100%;
+}
+
+.header-element .h-logo {
+  font-size: 1.8rem;
+}
+
+.header-element .h-play {
+  justify-content: space-between;
+}
+
+.header-element .h-play .baner {
+  margin: 1rem 0;
+}
+
+.header-element .h-play .play svg {
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+}
+
+.header-element .h-play .play h2 {
+  font-size: 1.5rem;
+  max-width: 50px;
+}
+
+/**************** NAVBAR HEADER ***************/
+.header .navbar-content {
+  width: 100%;
+}
+
+.header .navbar-content ul {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.header .navbar-content ul::-webkit-scrollbar {
+  width: 0;
+}
+
+.header .navbar-content ul li {
+  padding: 0.5rem 0 0 0;
+}
+
+.w-M-120 {
+  min-width: 120px !important;
+}
+
+/***************************** CORPS MOBILE DE LA PAGE **************************/
+/***************************** PREMIERE SECTION **************************/
+.a-la-une {
+  width: 100%;
+  padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.a-la-une .block {
+  margin-right: 0;
+}
+
+.a-la-une .block .card-big {
+  margin-bottom: 2rem;
+}
+
+.a-la-une .block .card-big-content img {
+  width: 100%;
+}
+
+.a-la-une .block .card-small {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-la-une .block .card-small .car-small-content img {
+  width: 100%;
+}
+
+.a-la-une .side-bar {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/***************************** SECONDE SECTION **************************/
+.can2022 {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.can2022-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-card-img img {
+  width: 100%;
+  height: 180px;
+}
+
+.can2022-content-item .big-card-text h3 {
+  font-size: 2.5rem;
+}
+
+.can2022-content-item .big-card-text h3 svg {
+  width: 23px;
+  height: 23px;
+}
+
+.can2022-content-item .small-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.can2022-content-item .small-card-img {
+  width: 100%;
+  flex: none;
+}
+
+.small-card-img img {
+  height: 150px;
+}
+
+.can2022-content-item .small-card-text {
+  padding-left: 0;
+}
+
+/***************************** TROISIEME SECTION **************************/
+.autres {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.autres .card-img img {
+  height: 180px;
+}
+
+/***************************** QUATRIEME SECTION **************************/
+.politique {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.podcasts-content,
+.afrique-content,
+.archives-content {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.afrique-content-card,
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.partenaria-content .card-vertical .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.partenaria-content .card-vertical .card .card-img img {
+  height: 200px;
+  width: 100%;
+}
+
+.afrique-content-card .card {
+  margin-top: 2rem;
+}
+
+.archives-content .date-archives {
+  flex-wrap: wrap;
+}
+
+.archives-content .date-archives p {
+  padding: 0.5rem;
+  margin-right: 1.6rem;
+}
