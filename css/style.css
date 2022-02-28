@@ -112,7 +112,8 @@ img {
   display: flex;
   flex-direction: column;
   background: var(--bg-color);
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); }
   .header-element {
     display: flex;
     flex-wrap: nowrap;
@@ -210,35 +211,37 @@ main {
     flex-grow: 1;
     margin-right: 3rem;
     align-items: stretch; }
-    .a-la-une .block .card-big {
-      margin-bottom: 3rem; }
-      .a-la-une .block .card-big-content {
-        height: 350px;
-        position: relative; }
-        .a-la-une .block .card-big-content img {
-          position: absolute;
-          width: 650px;
-          height: 350px; }
-        .a-la-une .block .card-big-content .card-big-text {
-          position: absolute;
-          bottom: 0;
-          color: #fff;
-          font-weight: 700;
-          font-size: 2rem;
-          text-align: center;
-          z-index: 1000; }
-    .a-la-une .block .card-small {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: auto;
-      column-gap: 3rem;
-      row-gap: 2.5rem; }
-      .a-la-une .block .card-small .car-small-content img {
-        width: 310px;
-        height: 160px; }
-      .a-la-une .block .card-small .car-small-content .card-small-text h2 {
-        font-size: 1.8rem;
-        margin-top: 0.8rem; }
+    .a-la-une .block .card {
+      z-index: -1; }
+      .a-la-une .block .card-big {
+        margin-bottom: 3rem; }
+        .a-la-une .block .card-big-content {
+          height: 350px;
+          position: relative; }
+          .a-la-une .block .card-big-content img {
+            position: absolute;
+            width: 650px;
+            height: 350px; }
+          .a-la-une .block .card-big-content .card-big-text {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: center;
+            z-index: 1; }
+      .a-la-une .block .card-small {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        column-gap: 3rem;
+        row-gap: 2.5rem; }
+        .a-la-une .block .card-small .car-small-content img {
+          width: 310px;
+          height: 160px; }
+        .a-la-une .block .card-small .car-small-content .card-small-text h2 {
+          font-size: 1.8rem;
+          margin-top: 0.8rem; }
   .a-la-une .side-bar {
     width: 320px;
     flex: none;
